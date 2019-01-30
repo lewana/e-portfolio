@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <title>Give a try</title>
- </head>
- 
- <body>
-  <h1>It's my first website</h1>
-  <p>something else I give a try if it's good enough</p>
- </body>
- 
- <style>
-  body {
-   background-color:#000;
-   color:#fff;
-   text-align:center;
-   }
- </style>
- 
+<head>
+<title>Anna's portfolio</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+    function openSlideMenu(){
+        document.getElementById('menu').style.width = '250px';
+        document.getElementById('content').style.marginLeft = '250px';
+    }
+    function closeSlideMenu(){
+        document.getElementById('menu').style.width = '0';
+        document.getElementById('content').style.marginLeft = '0';
+    }
+</script>
+</head>
+<body>
+    
+<div id="content">
+        
+    <span class="slide">
+        <a href="#" onclick="openSlideMenu()">
+            <i class="fas fa-bars"></i>
+         </a>
+    </span>
+        
+    <div id="menu" class="nav">
+        <a href="#" class="close" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+        </a>
+        <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+         </ul>
+    </div>
+    
+    <h1>Absolutely Madman</h1>
+</div>
+</body>
 </html>
